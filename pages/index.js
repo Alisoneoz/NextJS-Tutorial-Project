@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import Link from 'next/link'; // 1. import the Link component from 'next-link'
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Read <a href="/posts/first-post">this page!</a>
+          Read <Link href="/posts/first-post">this page!</Link>  {/* 2. Add the Link component */}
         </h1>
 
         <p className={styles.description}>
